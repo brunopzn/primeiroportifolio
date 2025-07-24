@@ -1,0 +1,427 @@
+:root {
+  --fundo: #212529;
+  --textcolor: #F8F9FA;
+  --sictioncolor: #343A40;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--textcolor);
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+.btninicio {
+  position: absolute;
+  display: flex;
+  top: 80%;
+}
+
+.btnmobile {
+  border: none;
+  display: none;
+}
+
+.btnmobile:hover {
+  background-color: #495057;
+
+}
+
+.logo {
+  color: #F8F9FA;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 21%;
+  padding-right: 20%;
+  align-items: center;
+  padding-top: 2%;
+  font-size: larger;
+
+}
+
+.menuall {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+body {
+  background-color: var(--fundo);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+}
+
+ul li a {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: #495057;
+}
+
+
+button {
+  border: solid;
+  background-color: none;
+  height: 30px;
+  width: 100px;
+  border-color: #ffffff;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: var(--fundo);
+}
+
+button:hover {
+  color: #495057;
+}
+
+
+#secone {
+  padding: 5%;
+  padding-top: 10%;
+  display: flex;
+  gap: 20vw;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.coteudo {
+  width: 20vw;
+  flex-wrap: wrap;
+  font-size: larger;
+  padding-left: 10%;
+}
+
+h1 {
+  display: flex;
+
+}
+
+.info {
+  gap: 10px;
+  flex-direction: column;
+  padding-left: 0vh;
+  width: 300px;
+}
+
+.img {
+  display: flex;
+  width: 600px;
+  height: auto;
+
+}
+
+#sectwo {
+  display: flex;
+  padding: 5%;
+  padding-top: 10%;
+  background-color: var(--sictioncolor);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.skillstitulo {
+
+  position: absolute;
+  width: 40vh;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+  top: 35%;
+
+}
+
+
+.allbox {
+  display: flex;
+  background-color: var(--sictioncolor);
+  width: 100vw;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+.box {
+  background-color: var(--sictioncolor);
+  height: 100px;
+  border-radius: 10%;
+  box-shadow: 2px 5px 10px black;
+  position: relative;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.imglogo {
+  height: 15vh;
+  border-radius: 10%;
+  z-index: 3;
+  display: flex;
+  position: relative;
+
+}
+
+
+
+.boximg {
+  padding-bottom: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.boxtext {
+  box-shadow: 2px 2px 15px black;
+  top: 50rem;
+  background-color: var(--fundo);
+  height: 25%;
+  width: 110%;
+  border-radius: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.boximg:hover .boxtext {
+
+  background-color: var(--fundo);
+  height: 25%;
+  width: 110%;
+  border-radius: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  top: -30%;
+}
+
+.boxtext h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+
+#projectsec {
+  height: 100vh;
+  background: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.projecttitle {
+  display: flex;
+  position: absolute;
+  top: 20%;
+
+}
+
+.projectcard {
+  width: 300px;
+  height: 300px;
+  border: solid;
+  border-radius: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+
+.projectcard h1 {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+
+
+}
+
+.projectcard p {
+  position: absolute;
+  padding: 5%;
+  text-align: center;
+  top: 30%
+}
+
+
+
+
+
+
+
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  * {
+    flex-wrap: wrap;
+  }
+
+  #link {
+    display: none;
+
+  }
+
+  .btnmobile {
+    border: none;
+    background: none;
+    position: absolute;
+    top: -25%;
+    display: block;
+    z-index: 100;
+  }
+
+  .btnmobile:hover {
+    background-color: #212529;
+
+  }
+
+  header {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: right;
+
+
+  }
+
+  .logo {
+    display: none;
+  }
+
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  ul li a {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  ul li a:hover {
+    color: #495057;
+  }
+
+  .menuall {
+    top: 10%;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+
+  }
+
+  /*ajustando as section 1*/
+
+  #secone {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 40rem;
+
+  }
+
+  .info {
+    display: flex;
+    position: absolute;
+    left: 20%;
+
+  }
+
+  .img {
+    padding-top: 20%;
+    padding-right: 20%;
+  }
+
+  /*fim da section 1*/
+
+  /*ajustando as section 2*/
+
+  #sectwo {
+    display: flex;
+    position: relative;
+    
+  }
+
+
+  .allbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .skillstitulo{
+    position: absolute;
+    top: 10%
+  }
+
+  .box {
+    background: transparent;
+    box-shadow: none;
+  }
+/*FIM section 2*/
+
+/*inicio section 3*/
+
+#projectsec {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  position: relative;
+}
+
+.projecttitle {
+position: absolute;
+top: 4%;
+}
+
+}
